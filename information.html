@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Secro | Privacy First</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #1a1a1a;
+            background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .info-card {
+            background: rgba(30, 30, 30, 0.95);
+            border: 1px solid #333;
+            padding: 50px 40px;
+            border-radius: 16px;
+            max-width: 550px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            animation: slideUp 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .icon-container {
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        .vector-icon {
+            stroke-width: 1.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="info-card">
+        <div class="icon-container">
+            <i data-lucide="shield-check" class="vector-icon" style="width: 60px; height: 60px;"></i>
+        </div>
+
+        <h1>Why Secro Exists</h1>
+        
+        <p>
+            The modern internet has a privacy problem. Most platforms treat your data as a product. At <span class="highlight">Secro</span>, we believe privacy isn't a premium feature—it's a human right.
+        </p>
+
+        <p>
+            We started this project to provide a communication tool that requires <span class="highlight">zero personal data</span>. No phone numbers, no email tracking, and no metadata logging.
+        </p>
+
+        <p>
+            Our architecture ensures that you remain anonymous, while your conversations remain entirely yours through end-to-end encryption.
+        </p>
+
+        <a href="index.html" class="back-link">
+            <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
+            Back to Home
+        </a>
+    </div>
+
+    <script>
+        /* Initializes the icons */
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
